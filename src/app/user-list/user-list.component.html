@@ -1,0 +1,15 @@
+<md-list>
+    <md-list-item *ngFor="let user of users">
+        <i md-list-avatar class="material-icons {{user.gender}}">face</i>
+        <h3 md-line> {{user.firstName}} {{user.surname}} </h3>
+        <p md-line>
+            <span> Age: {{user.age}} </span>
+            <span> Friends: {{user.friends.length}} </span>
+        </p>
+        <button *ngIf="showButton" type="button" md-button md-raised-button color="primary"
+                (click)="selectUser.emit(user)">Friends
+        </button>
+    </md-list-item>
+</md-list>
+
+<div *ngIf="!users?.length">Nothing to show</div>

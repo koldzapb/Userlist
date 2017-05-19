@@ -1,0 +1,20 @@
+.toolbar {
+    height: 10vh;
+}
+
+.container {
+    min-height: 90vh;
+}
+
+.sidebar {
+    width: 300px;
+    float: left;
+}
+
+.content {
+    margin-left: 348px;
+}
+
+.clear {
+    clear: both;
+}
